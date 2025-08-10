@@ -8,12 +8,11 @@ body{
     display: grid;
     grid-template-rows: repeat(8, 1fr);
 }
-.mainHeader{
-    margin: 97px 227px;
+.headerContainer{ 
     padding: 40px;
     display: grid;
     grid-template-columns: 1fr 2fr;
-    background-color: #fff;
+    
     .titleBlock{
         display: flex;
         align-items: center;
@@ -30,8 +29,18 @@ body{
         }
     }
 }
+.mainHeader{
+    margin: 97px 227px;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    .pageContent{
+        display: flex;
+        flex-direction: column;
+    }
+}
 .mainContainer{
     background-image: url(./img/screen\ 29.png);
     background-repeat: no-repeat;
-    
+    background-size: cover; 
 }
