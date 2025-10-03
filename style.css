@@ -32,7 +32,7 @@ body{
     }
 }
 .mainHeader{
-    margin: 97px 227px;
+    margin: 83px 305px;
     padding: 40px;
     display: flex;
     flex-direction: column;
@@ -42,8 +42,15 @@ body{
         display: flex;
         flex-direction: column;
         align-items: center;
+        position: relative;
+        min-height: 400px;
+        
         h1{
+            position: absolute;
             text-align: center;
+            overflow: visible;
+            font-family: 900;
+            font-size: 180px;
         }
     }
     .buttons{
@@ -56,6 +63,11 @@ body{
             border-radius: 100px;
             color: #4F200D;
             font-weight: 600;
+            transition: ease .5s;
+        }
+        .navigation:hover{
+            background-color: #4F200D;
+            color: #fff;
         }
     }
     
