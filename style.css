@@ -1,3 +1,6 @@
+:root{
+    --backgrColor: #FF9900;
+}
 *{
     margin: 0;
     padding: 0;
@@ -5,8 +8,6 @@
     box-sizing: border-box;
 }
 body{
-    display: grid;
-    grid-template-rows: repeat(8, 1fr);
     background-image: url(./img/screen\ 29.png);
     background-repeat: no-repeat;
     background-size: cover; 
@@ -44,13 +45,39 @@ body{
         align-items: center;
         position: relative;
         min-height: 400px;
-        
-        h1{
+        ul > li{
+            list-style-type: none;
+            padding-left: 28px;
+            margin-bottom: 10px;
+            position: relative;
+        }
+        ul > li::before{
+            background-image: url(./img/tennis-ball.png);
+            content: "";
             position: absolute;
+            width: 18px;
+            height: 18px;
+            left: -5px;
+        }
+        h1{
             text-align: center;
             overflow: visible;
             font-family: 900;
+            width: 100%;
             font-size: 180px;
+            font-weight: 900;
+            color: var(--backgrColor);
+            .underline{
+                text-decoration: underline dotted;
+            } 
+        }
+        h1::before{
+            content: "Розвивайся,";
+            text-decoration: underline;
+        }
+        h1::after{
+            content: "твори";
+            text-decoration: underline wavy;
         }
     }
     .buttons{
