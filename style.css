@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap");
 :root {
   --backgrColor: #ff9900;
   --buttonColor: #4f200d;
@@ -13,9 +13,24 @@
 }
 body {
   background-image: url(./img/screen\ 29.png);
-  background-repeat: no-repeat;
   background-size: contain;
 }
+.underline {
+  font-family: "Anton", sans-serif;
+  text-decoration: underline;
+  text-decoration-thickness: 6px;
+  text-underline-offset: 20px;
+}
+.section-title {
+    text-align: center;
+    color: var(--textColor);
+    font-family: "Cormorant Garamond", serif;
+    font-size: 96px;
+    font-weight: 900;
+    span{
+      text-decoration-style: wavy ;
+    }
+  }
 .headerContainer {
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -65,23 +80,26 @@ body {
     h1 {
       text-align: center;
       overflow: visible;
-      font-family: 900;
-      font-size: 150px;
+      font-size: 100px;
       font-weight: 900;
+      text-transform: uppercase;
+      position: relative;
       margin-bottom: 20px;
       color: var(--backgrColor);
-      .underline {
-        text-decoration: underline dotted;
+      .andWord{
+        font-family: "Cormorant Garamond", serif;
+        font-weight: 400;
+        font-style: italic;
       }
-    }
-    h1::before {
-      content: "Розвивайся,";
-      text-decoration: underline;
-    }
-    h1::after {
-      content: "твори";
-      text-decoration: underline wavy;
-      display: inline;
+      .newLine{
+        margin-left: -60%;
+        text-decoration-style: dotted;
+      }
+      .outside{
+        position: absolute;
+        right: -120px;
+        text-decoration-style: wavy;
+      }
     }
   }
   .buttons {
@@ -108,19 +126,6 @@ body {
   gap: 56px;
   background-color: var(--buttonColor);
   padding: 60px 0;
-  .section2-title {
-    text-align: center;
-    color: var(--textColor);
-    font-family: "Cormorant Garamond", serif;
-    font-size: 96px;
-    font-weight: 900;
-  }
-  .section2-title span {
-    font-family: "Anton", sans-serif;
-    text-decoration: underline wavy;
-    text-decoration-thickness: 6px;
-    text-underline-offset: 20px;
-  }
   .section2-slider {
     overflow-x: scroll;
     display: flex;
@@ -156,5 +161,17 @@ body {
     border-radius: 100px;
     border: none;
     cursor: pointer;
+  }
+}
+.section3{
+  padding: 111px 190px 133px 190px;
+  background-color: var(--backgrColor);
+  h2{
+    margin-bottom: 80px;
+  }
+  .events{
+    display: grid;
+    grid-template-rows: repeat(5, max-content);
+    gap: 30px;
   }
 }
