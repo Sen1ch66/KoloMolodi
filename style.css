@@ -205,3 +205,11 @@ body {
   right: 0;
   opacity: 10%;
 }
+.section4{
+  background-color: #fff;
+  .section-title{
+    font-family: "Anton", sans-serif;
+    color: #ff9900;
+    text-decoration-style: wavy;
+  }
+}
