@@ -1,9 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 :root {
   --backgrColor: #ff9900;
   --buttonColor: #4f200d;
   --textColor: #ffffff80;
+  --textColorSecond: #4F200D80;
 }
 * {
   margin: 0;
@@ -20,6 +22,7 @@ body {
   text-decoration: underline;
   text-decoration-thickness: 6px;
   text-underline-offset: 20px;
+  text-transform: uppercase;
 }
 .section-title {
   text-align: center;
@@ -176,6 +179,9 @@ body {
       margin-bottom: 10px;
     }
   }
+  .sectionButton{
+    margin: 0 auto;
+  }
 }
 .section3{
   padding: 111px 190px 133px 190px;
@@ -216,7 +222,7 @@ body {
   opacity: 10%;
 }
 .section4{
-  background-color: #fff;
+  background-color: #F9F9F9;
   padding: 60px 86px 40px;
   display: flex;
   flex-direction: column;
@@ -252,5 +258,54 @@ body {
   }
   & .section4-button{
     width: fit-content;
+  }
+}
+.section5{
+  background-color: #fff;
+  padding: 40px 138px 60px;
+  display: grid;
+  grid-auto-rows: max-content;
+  & .faqQuestion{
+    border-bottom: 1px solid var(--textColorSecond);
+    width: fit-content;
+    & summary {
+      position: relative;
+      font-weight: 700;
+      font-family: "Inter", sans-serif;
+      list-style: none;
+      font-size: 24px;
+      padding: 24px 0;
+      display: inline-flex;
+      align-items: center;
+      gap: 30px;
+      cursor: pointer;
+      color: var(--buttonColor);
+    }
+    & .answerText{
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+    & summary::after {
+      content: "";
+      width: 18px;
+      height: 18px;
+      background-image: url("./img/icos/chevron-down.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      border-radius: 100px;
+      background-color: var(--backgrColor);
+      padding: 9px;
+      cursor: pointer;
+      flex-shrink: 0;
+    }
+    &[open] summary::after {
+      transform: rotate(180deg);
+    }
+    summary::-webkit-details-marker {
+      display: none;
+    }
+  }
+  & .section-title{
+    color: var(--textColorSecond);
   }
 }
