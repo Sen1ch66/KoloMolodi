@@ -26,7 +26,7 @@ body {
 }
 .section-title {
   text-align: center;
-  color: var(--textColor);
+  color: var(--textColorSecond);
   font-family: "Cormorant Garamond", serif;
   font-size: 96px;
   font-weight: 900;
@@ -154,6 +154,9 @@ body {
   gap: 56px;
   background-color: var(--buttonColor);
   padding: 60px 0;
+  .section-title{
+    color: var(--textColor);
+  }
   .section2-slider {
     overflow-x: scroll;
     display: flex;
@@ -231,7 +234,6 @@ body {
   position: relative;
   & .section-title{
     font-family: "Anton", sans-serif;
-    color: #4F200D80;
     text-decoration-style: wavy;
     margin-bottom: 48px;
   }
@@ -294,6 +296,7 @@ body {
       background-position: center;
       border-radius: 100px;
       background-color: var(--backgrColor);
+      transition: transform 0.3s ease;
       padding: 9px;
       cursor: pointer;
       flex-shrink: 0;
@@ -307,5 +310,33 @@ body {
   }
   & .section-title{
     color: var(--textColorSecond);
+  }
+}
+.section6{
+  position: relative;
+  background-color: var(--backgrColor);
+  padding: 40px 138px 118px;
+  & .section-title{
+    margin-bottom: 60px;
+  }
+  & .section6Content{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    & .locationInfo{
+      .cityAddress, .placeAddress{
+        font-family: "Inter", sans-serif;
+        font-weight: 400;
+      }
+      .cityAddress{
+        font-size: 24px;
+      }
+      .placeAddress{
+        font-size: 18px;
+      }
+    }
+  }
+  .sectionIco{
+    left: 47%;
   }
 }
