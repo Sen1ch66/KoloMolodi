@@ -70,6 +70,7 @@ body {
   position: absolute;
   bottom: 0;
   pointer-events: none;
+  left: 47%;
 }
 .headerContainer {
   display: grid;
@@ -263,6 +264,7 @@ body {
   }
 }
 .section5{
+  position: relative;
   background-color: #fff;
   padding: 40px 138px 60px;
   display: grid;
@@ -335,8 +337,5 @@ body {
         font-size: 18px;
       }
     }
-  }
-  .sectionIco{
-    left: 47%;
   }
 }
