@@ -339,3 +339,9 @@ body {
     }
   }
 }
+.section7{
+  background-color: var(--buttonColor);
+  .section-title{
+    color: var(--textColor);
+  }
+}
