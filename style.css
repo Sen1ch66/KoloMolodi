@@ -33,7 +33,7 @@ body {
   span{
     text-decoration-style: wavy ;
   }
-  }
+}
 .navigation {
   padding: 18px 30px;
   border: 1px solid var(--buttonColor);
@@ -57,14 +57,14 @@ body {
   cursor: pointer;
 }
 .sectionButtonPrimary{
-  background-color: #fff;
+  background-color: transparent;
   border: 1px solid var(--backgrColor);
   color: var(--backgrColor);
 }
 .sectionButtonSecondary{
   background-color: var(--buttonColor);
+  border: 1px solid var(--backgrColor);
   color: #fff;
-  cursor: pointer;
 }
 .sectionIco{
   position: absolute;
@@ -259,8 +259,9 @@ body {
       }
     }
   }
-  & .section4-button{
+  & .sectionButton{
     width: fit-content;
+    border: none;
   }
 }
 .section5{
@@ -341,7 +342,23 @@ body {
 }
 .section7{
   background-color: var(--buttonColor);
+  padding: 40px 138px 154px;
   .section-title{
     color: var(--textColor);
+    margin-bottom: 126px;
+  }
+  & .contactsContent{
+    display: grid;
+    grid-auto-columns: max-content;
+    grid-auto-flow: column;
+    gap: 138px;
+    & .contactsInfo{
+      display: flex;
+      flex-direction: column;
+      gap: 62px;
+      & .info{
+        margin-bottom: calc(185px - 62px);
+      }
+    }
   }
 }
