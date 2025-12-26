@@ -55,6 +55,7 @@ body {
   border-radius: 100px;
   border: none;
   cursor: pointer;
+  transition: ease 0.5s;
 }
 .sectionButtonPrimary{
   background-color: transparent;
@@ -341,6 +342,7 @@ body {
   }
 }
 .section7{
+  position: relative;
   background-color: var(--buttonColor);
   padding: 40px 138px 154px;
   .section-title{
@@ -353,7 +355,7 @@ body {
     grid-auto-columns: minmax(0, 1fr);
     justify-content: space-between;
     grid-auto-flow: column;
-    /* gap: 138px; */
+    gap: 138px;
     & .contactsInfo{
       display: flex;
       flex-direction: column;
@@ -364,8 +366,9 @@ body {
         & .sectionFormTitle{
           font-family:"Anton", sans-serif;
           text-transform: uppercase;
-          font-size: 36px;
+          font-size: 32px;
           font-weight: 1000;
+          margin-bottom: 30px;
         }
       }
       .sectionFormText, .socials .contacts, .worktime .worktimeTitle, .worktime p {
@@ -376,6 +379,14 @@ body {
         display: flex;
         flex-direction: column;
         gap: 20px;
+        & > a{
+          display: flex;
+          align-items: center;
+          text-decoration: none;
+          color: #FFFFFF;
+          gap: 10px;
+          font-size: 18px;
+        }
         & .linksIcons > a:first-of-type{
           margin-right: 15px;
         }
@@ -390,6 +401,48 @@ body {
           align-items: center;
           gap: 40px;
         }
+      }
+    }
+    .sectionButton:hover{
+      background-color: var(--backgrColor);
+      color: var(--buttonColor);
+    }
+    & .contactForm{
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      font-family: "Inter", sans-serif;
+      & .visuallyHidden {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+      }
+      input{
+        appearance: none;
+        -webkit-appearance: none;
+        color: #fff;
+        padding: 15px 20px;
+      }
+      input, textarea{
+        background-color: #FFFFFF1A;
+        font-family: inherit;
+        border: none;
+        font-size: 18px;
+        width: 453px;
+      }
+      input::placeholder, textarea::placeholder{
+        color: #FFFFFF40;
+      }
+      textarea{
+        height: 150px;
+        resize: none;
+        padding: 20px;
       }
     }
   }
