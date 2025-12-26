@@ -6,6 +6,7 @@
   --buttonColor: #4f200d;
   --textColor: #ffffff80;
   --textColorSecond: #4F200D80;
+  --backgrColor2: #F9F9F9;
 }
 * {
   margin: 0;
@@ -446,4 +447,7 @@ body {
       }
     }
   }
+}
+.section8{
+  background-color: var(--backgrColor2);
 }
