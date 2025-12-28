@@ -449,5 +449,15 @@ body {
   }
 }
 .section8{
+  position: relative;
   background-color: var(--backgrColor2);
+  padding: 67px 79px 142px;
+  margin: calc(90px - 67px);
+  display: flex;
+  flex-direction: column;
+  gap: 84px;
+  & .pTitle{
+    margin-bottom: 32px;
+    font-size: 18px;
+  }
 }
