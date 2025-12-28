@@ -452,12 +452,36 @@ body {
   position: relative;
   background-color: var(--backgrColor2);
   padding: 67px 79px 142px;
-  margin: calc(90px - 67px);
   display: flex;
   flex-direction: column;
   gap: 84px;
+  font-family: "Inter", sans-serif;
+  & .partners .partnersList{
+    display: flex;
+    gap: 40px;
+    list-style-type: none;
+  }
   & .pTitle{
     margin-bottom: 32px;
     font-size: 18px;
+  }
+  & .feedbackAndTitle .feedback{
+    display: grid;
+    grid-template-columns: repeat(3, max-content);
+    gap: 20px;
+    & .userCom{
+      background-color: #FFFFFF;
+      padding: 30px;
+      max-width: 293px;
+      height: fit-content;
+      & .userName, & .userInfo{
+        color: var(--buttonColor);
+        font-size: 14px;
+      }
+      & .userName{
+        margin-bottom: 10px;
+        font-size: 14px;
+      }
+    }
   }
 }
