@@ -474,6 +474,9 @@ body {
       padding: 30px;
       max-width: 293px;
       height: fit-content;
+      & .human{
+        margin-bottom: 30px;
+      }
       & .userName, & .userInfo{
         color: var(--buttonColor);
         font-size: 14px;
