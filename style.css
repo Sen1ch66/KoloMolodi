@@ -456,6 +456,7 @@ body {
   flex-direction: column;
   gap: 84px;
   font-family: "Inter", sans-serif;
+  color: var(--buttonColor);
   & .partners .partnersList{
     display: flex;
     gap: 40px;
@@ -478,13 +479,30 @@ body {
         margin-bottom: 30px;
       }
       & .userName, & .userInfo{
-        color: var(--buttonColor);
         font-size: 14px;
       }
       & .userName{
         margin-bottom: 10px;
         font-size: 14px;
       }
+    }
+  }
+  & .generalRules{
+    max-width: 65%;
+  }
+  & .generalRules .generalRulesTitle{
+    font-size: 24px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+  }
+  & .generalRules .listOfRules{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    & .rule > p{
+      font-size: 18px;
+      font-weight: 700;
     }
   }
 }
